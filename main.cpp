@@ -1,21 +1,6 @@
 #include <QCoreApplication>
 #include <QDebug>
-
-void  BubbleSort(QVector<int> & v)      // 冒泡排序法
-{
-    for(int i = 0 ; i < v.size();i++)
-    {   bool isSorted = true;
-        for(int j = 0; j <v.size()-i-1;j++)
-        {   if(v[j+1] <v[j])
-            {   isSorted = false;
-                int temp = v[j];
-                v[j] = v[j+1];
-                v[j+1] = temp;
-            }
-        }
-        if(isSorted)    break;
-    }
-}
+#include <bubblesort.h>
 
 int main(int argc, char *argv[])
 {
